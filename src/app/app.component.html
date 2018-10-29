@@ -1,0 +1,39 @@
+<div>
+  <!-- <button class="mobile-nav" (click)="showHideSideBar()"><i class="fa fa-bars"></i></button> -->
+  <i class="mobile-nav pi pi-align-justify" (click)="showHideSideBar()"></i>
+  <div>
+    <nav class="main-nav">
+      <div>
+        <a [style.color]="navColor('/')" routerLink="/">HOME</a>
+        <a [style.color]="navColor('/bio')" routerLink="/bio">BIO</a>
+        <a [style.color]="navColor('/news')" routerLink="/news">NEWS</a>
+        <a [style.color]="navColor('/teaching')" routerLink="/teaching">TEACHING</a>
+        <a [style.color]="navColor('/resume')" routerLink="/resume">RESUME</a>
+        <a [style.color]="navColor('/media')" routerLink="/media">MEDIA</a>
+        <a [style.color]="navColor('/contact')" routerLink="/contact">CONTACT</a>
+      </div>
+    </nav>
+  </div>
+  <div class="header-title">
+    <h1 style="font-family: Charmonman">Beth Crandall</h1>
+  </div>
+</div>
+<p-sidebar [(visible)]="showSideBar" position="right" [baseZIndex]="10000">
+  <ul>
+    <li><a [style.color]="navColor('/')" routerLink="/" (click)="onMobileNav()">HOME</a></li>
+    <li><a [style.color]="navColor('/bio')" routerLink="/bio" (click)="onMobileNav()">BIO</a></li>
+    <li><a [style.color]="navColor('/news')" routerLink="/news" (click)="onMobileNav()">NEWS</a></li>
+    <li><a [style.color]="navColor('/teaching')" routerLink="/teaching" (click)="onMobileNav()">TEACHING</a></li>
+    <li><a [style.color]="navColor('/resume')" routerLink="/resume" (click)="onMobileNav()">RESUME</a></li>
+    <li><a [style.color]="navColor('/media')" routerLink="/media" (click)="onMobileNav()">MEDIA</a></li>
+    <li><a [style.color]="navColor('/contact')" routerLink="/contact" (click)="onMobileNav()">CONTACT</a></li>
+  </ul>
+</p-sidebar>
+
+<router-outlet></router-outlet>
+
+<div class="beth-footer">
+  <i class="fa fa-2x fa-facebook-square"></i>
+  <i class="fa fa-2x fa-twitter-square"></i>
+</div>
+

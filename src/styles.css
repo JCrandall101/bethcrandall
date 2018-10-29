@@ -1,0 +1,52 @@
+body{
+    font-family: brandon-grot-w01-light, sans-serif;
+}
+.main-nav{
+    text-align:right;
+    font-family: brandon-grot-w01-light, sans-serif;
+    font-size: 12px;
+    color: #bababa;
+}
+
+.main-nav>div>a{
+    padding: 0px 5px;
+    color: #a8a6a6;
+}
+
+.main-nav-selected{
+    color: #565555;
+}
+
+.mobile-nav{
+    display: none;
+}
+
+.header-title{
+    text-align: center;
+}
+
+.beth-footer{
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    background-color:pink;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .main-nav{
+        display:none;
+    }
+
+    .mobile-nav{
+        display: block;
+        position: fixed;
+        height: 20px;
+        width: 20px;
+        border-radius: 5px;
+        top: 10px;
+        right: 10px;
+    }
+}
