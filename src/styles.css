@@ -31,8 +31,12 @@ body{
     left: 0;
     height: 40px;
     width: 100%;
-    background-color:pink;
     padding: 5px;
+    text-align: right;
+}
+
+.beth-footer>i{
+    margin-right: 5px;
 }
 
 @media (max-width: 768px) {
