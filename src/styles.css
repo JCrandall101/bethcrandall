@@ -35,8 +35,10 @@ body{
     text-align: right;
 }
 
-.beth-footer>i{
+.beth-footer>a, .beth-footer>a>i{
     margin-right: 5px;
+    vertical-align: bottom;
+    line-height: 36px;
 }
 
 @media (max-width: 768px) {
