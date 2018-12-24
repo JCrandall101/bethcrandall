@@ -19,7 +19,7 @@
   </div>
 </div>
 <p-sidebar [(visible)]="showSideBar" position="right" [baseZIndex]="10000">
-  <ul>
+  <ul class="side-nav">
     <li><a [style.color]="navColor('/')" routerLink="/" (click)="onMobileNav()">HOME</a></li>
     <li><a [style.color]="navColor('/bio')" routerLink="/bio" (click)="onMobileNav()">BIO</a></li>
     <li><a [style.color]="navColor('/news')" routerLink="/news" (click)="onMobileNav()">NEWS</a></li>
