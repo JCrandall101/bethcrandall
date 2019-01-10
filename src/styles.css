@@ -1,11 +1,27 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+
 body{
     font-family: brandon-grot-w01-light, sans-serif;
+    position: relative;
+    margin: 0;
+    padding-bottom: 5px;
+    min-height: 100%;
+}
+p {
+    font-family: 'Thasadith', sans-serif;
 }
 .main-nav{
     text-align:right;
     font-family: brandon-grot-w01-light, sans-serif;
     font-size: 12px;
     color: #bababa;
+}
+
+.main-nav>div{
+    padding: 5px;
 }
 
 .main-nav>div>a{
@@ -26,9 +42,10 @@ body{
 }
 
 .beth-footer{
-    position:fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
+    right: 0;
     height: 40px;
     width: 100%;
     padding: 5px;

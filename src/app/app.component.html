@@ -15,7 +15,7 @@
     </nav>
   </div>
   <div class="header-title">
-    <h1 style="font-family: Charmonman">Beth Crandall</h1>
+    <h1 *ngIf="showHeader()" style="font-family: Charmonman">Beth Crandall</h1>
   </div>
 </div>
 <p-sidebar [(visible)]="showSideBar" position="right" [baseZIndex]="10000">

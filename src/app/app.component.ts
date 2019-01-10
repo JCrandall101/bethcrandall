@@ -11,10 +11,18 @@ export class AppComponent implements OnInit {
   selectedTab = 'home';
   showSideBar = false;
 
-  constructor(private router: Router) { }
+  constructor(public router: Router) { }
 
   ngOnInit(){
     console.log(this.router.url);
+  }
+
+  showHeader(){
+    if (this.router.url !== '/resume'){
+      return true;
+    } else {
+      return false;
+    }
   }
 
   navColor(route: string){
